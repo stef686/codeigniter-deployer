@@ -1,5 +1,5 @@
 {
-    "name": "kenjis/codeigniter-deployer",
+    "name": "stef686/codeigniter-deployer",
     "type": "project",
     "description": "A Deployment Tool for CodeIgniter 3.0",
     "keywords": [
@@ -10,13 +10,17 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Stefan Ashwell",
+            "homepage": "https://github.com/stef686/codeigniter-deployer"
+        },
+        {
             "name": "Kenji Suzuki",
             "homepage": "https://github.com/kenjis/codeigniter-deployer"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-        "deployer/deployer": "~3.0"
+        "deployer/deployer": "~6.0"
     },
     "extra": {
         "branch-alias": {
