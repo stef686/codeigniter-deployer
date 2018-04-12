@@ -15,7 +15,7 @@ class Installer
 {
     public static function install()
     {
-        self::recursiveCopy('vendor/kenjis/codeigniter-deployer/deploy', 'deploy');
+        self::recursiveCopy('vendor/stef686/codeigniter-deployer/deploy', 'deploy');
     }
 
     private static function copy($src, $dst)
@@ -35,12 +35,12 @@ class Installer
     private static function recursiveCopy($src, $dst)
     {
         @mkdir($dst, 0755);
-        
+
         $iterator = new \RecursiveIteratorIterator(
             new \RecursiveDirectoryIterator($src, \RecursiveDirectoryIterator::SKIP_DOTS),
             \RecursiveIteratorIterator::SELF_FIRST
         );
-        
+
         foreach ($iterator as $file) {
             if ($file->isDir()) {
                 @mkdir($dst . '/' . $iterator->getSubPathName());
